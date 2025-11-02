@@ -54,6 +54,49 @@ Offer personalized preventive care suggestions based on medical history.
 Partner with universities, community clinics, and insurers to make the tool widely accessible to students and underserved communities.
 Develop a mobile app for instant access anytime, anywhere.
 Our mission is to ensure no one — student, parent, or patient — ever feels lost when it comes to their care.
+
+# How to Run This Project
+
+Clone the Repository
+
+git clone [your-repo-url]
+cd [your-repo-name]
+
+
+Install Dependencies
+
+pip install -r requirements.txt
+
+
+Set Up Secret Keys
+
+Create a file at .streamlit/secrets.toml.
+
+Add your Gemini API key (from Google AI Studio):
+
+GEMINI_API_KEY = "AIza..."
+
+
+Run the Triage API 
+
+Open the Triage_model.py notebook in Google Colab.
+
+Set the Colab Secrets: Add your HF_TOKEN (Hugging Face) and NGROK_TOKEN (ngrok) to the Colab secrets panel (🔑 icon).
+
+Run the notebook: Run both cells. At the end, it will print a public ngrok URL:
+--- Your Triage API is LIVE at: https://your-unique-url.ngrok-free.dev ---
+
+Run the Main App 
+
+Update the URL: Open app.py and paste the ngrok URL from colab into the TRIAGE_API_URL variable.
+
+Important: This project has two parts that must run at the same time. You must keep the Colab notebook (from Step 4) running in one browser tab. This is your "Triage Server." The app.py script (your Streamlit app) is the "Frontend" that calls that server.
+
+Run Streamlit: In your terminal, run:
+
+streamlit run app.py
+
+
 # Results
 <img src="https://github.com/sharle21/In-Network-Care-Navigator/blob/c43d76176a1e30094f334405b9bb70d7ddacb252/Screenshot%202025-11-02%20at%206.27.00%20PM.png">
 <img src="https://github.com/sharle21/In-Network-Care-Navigator/blob/e17ae91be53acc24319d5edda27582d0e7e94393/Screenshot%202025-11-02%20at%206.25.42%20PM.png">
