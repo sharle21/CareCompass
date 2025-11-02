@@ -3,3 +3,5 @@ pandas
 scikit-learn
 google-generativeai
 google-api-python-client
+overpy
+geopy
