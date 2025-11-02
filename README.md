@@ -55,7 +55,7 @@ Partner with universities, community clinics, and insurers to make the tool wide
 Develop a mobile app for instant access anytime, anywhere.
 Our mission is to ensure no one — student, parent, or patient — ever feels lost when it comes to their care.
 
-# How to Run This Project
+# How to Run This Project?
 
 Clone the Repository
 
