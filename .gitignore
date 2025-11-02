@@ -1,0 +1,12 @@
+# Ignore the real secrets file
+.streamlit/secrets.toml
+
+# Ignore large model files
+*.pkl
+*.joblib
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore Mac-specific files
+.DS_Store
