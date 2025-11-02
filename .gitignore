@@ -1,3 +1,5 @@
+.DS_Store
+.env
 # Ignore the real secrets file
 .streamlit/secrets.toml
 
